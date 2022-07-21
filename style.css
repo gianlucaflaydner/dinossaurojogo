@@ -1,9 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   display:flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  flex-direction: column;
+
 }
 
 .game {
@@ -104,4 +110,27 @@ body {
   font-family:'Playfair Display', serif;  
   font-size:16px;
 
+}
+
+#road {
+  position: relative;
+  height:20px;
+  width:600px;
+  background-image: url("img/road.png");
+  background-repeat: repeat-x;
+  background-size: 80% 50%;
+  --position:0;
+  background-position: var(--position) 50%;
+  top:38px;
+  z-index:-1;
+
+}
+
+h1 {
+  font-size:30px;
+  font-family:'Rubik', sans-serif;
+  padding-top:70px;
+  
+
+  
 }
