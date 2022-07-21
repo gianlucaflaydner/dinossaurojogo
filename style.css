@@ -9,6 +9,7 @@ body {
   height: 100vh;
   overflow: hidden;
   flex-direction: column;
+  
 
 }
 
@@ -18,16 +19,17 @@ body {
   border: 1px solid black;
   margin: auto;
   overflow: hidden;
+  background-color: aqua;
  
 }
 
-#dino {
+#mario {
   width: 50px;
   height: 50px;
-  background-image: url(img/trex.png);
+  background-image: url(img/mario.png);
   background-size: 50px 50px;
   position: relative;
-  top: 150px;
+  top: 145px;
   
   
 }
@@ -59,18 +61,18 @@ body {
   }
 }
 
-#cactus {
-  width:20px;
+#goomba {
+  width:30px;
   height: 40px;
   position: relative;
   top: 110px;
   left: 570px;
 
-  background-image: url("img/cactus.png");
-  background-size: 20px 40px;
+  background-image: url("img/goomba.png");
+  background-size: 30px 40px;
   
 
-  animation: leftmovement 1s infinite linear;
+  
 }
 
 @keyframes leftmovement {
@@ -92,11 +94,10 @@ body {
   top: -60px;
   left:500px;
 
-  background-image: url("img/clouds.png");
+  background-image: url("img/mariocloud.png");
   background-size: 80px 40px;
   
-
-  animation: leftmovement 5s infinite linear;
+  
 
 }
 
@@ -114,15 +115,15 @@ body {
 
 #road {
   position: relative;
-  height:20px;
+  height:30px;
   width:600px;
-  background-image: url("img/road.png");
+  background-image: url("img/mariochao.png");
   background-repeat: repeat-x;
-  background-size: 80% 50%;
+  background-size: 85% 50%;
   --position:0;
   background-position: var(--position) 50%;
-  top:38px;
-  z-index:-1;
+  top:42px;
+  z-index:0;
 
 }
 
@@ -130,7 +131,10 @@ h1 {
   font-size:30px;
   font-family:'Rubik', sans-serif;
   padding-top:70px;
-  
-
-  
+   
 }
+
+
+
+
+
